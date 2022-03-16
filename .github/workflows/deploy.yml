@@ -18,9 +18,8 @@ jobs:
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@v0
       with:
-        service_account_email: ${{ secrets.GCP_EMAIL }}
-        service_account_key: ${{ secrets.GCP_CREDENTIALS }}
-        export_default_credentials: true
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+    #see: https://github.com/google-github-actions/setup-gcloud#authorization
 
     # Configure Docker with Credentials
     - name: Configure Docker
