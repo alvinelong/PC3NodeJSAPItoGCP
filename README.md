@@ -26,4 +26,4 @@ GCP_CREDENTIALS: Service account key in JSON format.
 GCP_EMAIL: Service account email.
 GCP_PROJECT: Google Cloud instance project ID.
 
-6. Push the changes to Github and Github runs the CI/CD commands in deploy.yaml to Google Cloud. Check the changes at the endpoint.
+6. Push the changes to Github and Github runs the CI/CD commands in deploy.yaml to Google Cloud. CI/CD will build and deploy a docker container in Google Cloud instance Check the changes at the endpoint.
